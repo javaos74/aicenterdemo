@@ -1,0 +1,257 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1343,1089" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:uaa="clr-namespace:UiPath.AbbyyEmbedded.Activities;assembly=UiPath.AbbyyEmbedded.Activities" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.Vision.OCR.Engine</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.AbbyyEmbedded.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.AbbyyEmbedded.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,924" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 채팅 | Microsoft Teams" sap:VirtualizedContainerService.HintSize="510,832" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="476,540" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DesignTimeCacheId="5b7cf9f1-29a6-46e7-9174-67191d8d924d" DisplayName="CV Screen Scope 'DIV'" sap:VirtualizedContainerService.HintSize="434,448" sap2010:WorkflowViewState.IdRef="CVScope_1" Server="https://ai.myrobots.co.kr:31390/public/mlskills/host/7027dbc7-e527-4e0f-8474-3883dc7c86e7/computervision" Version="V2">
+              <p:CVScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="실행" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'Jiyeon Kim' (55,97,66,14)&quot;]" DesignTimeCacheId="5b7cf9f1-29a6-46e7-9174-67191d8d924d" DesignTimeScaleFactor="2" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="400,137" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="efeec7e563ec2abdd783845c6e4db250" KeyModifiers="None" MouseButton="BTN_LEFT" Version="V2">
+                      <p:CvClickWithDescriptor.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </p:CvClickWithDescriptor.CursorPosition>
+                      <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor>
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor DesignTimeArea="55, 97, 66, 14" ElementType="Text" Text="Jiyeon Kim" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                      <p:CvClickWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="958b99a8-a6db-4731-a125-acde08bf2792">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvClickWithDescriptor.Target>
+                    </p:CvClickWithDescriptor>
+                  </Sequence>
+                </ActivityAction>
+              </p:CVScope.Body>
+              <p:CVScope.DesignTimeCache>
+                <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" />
+              </p:CVScope.DesignTimeCache>
+              <p:CVScope.DesignTimeCacheContainer>
+                <uc:CvCacheContainer>
+                  <uc:CvCacheContainer.Caches>
+                    <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                      <uc:CVCache DisplayName="기본 화면" Id="5b7cf9f1-29a6-46e7-9174-67191d8d924d" InformativeScreenshot="a2b72e032b7517e22c3f7d847bf73ae8" LogicalPosition="376, 442" OcrText="- iie Jiyeon Kim&#xD;&#xA;% 3. 2.&#xD;&#xA;7® 4:5121—1&#xD;&#xA;Raon Lee 2. 26.&#xD;&#xA;1.7.&#xD;&#xA;12. 28.&#xD;&#xA;12. 17. APAC - Al and Documen...&#xD;&#xA;om : 0|| 24^44. :) Framework I 11:55&#xD;&#xA;*2I¥&#xD;&#xA;KB^-ei^-iy 45— I DI ® i-h'gm &gt; 6269&#xD;&#xA;6 Q : S?||0|" Position="376, 442" ScaleFactor="2">
+                        <uc:CVCache.CvUiElements>
+                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="32">
+                            <uc:CvElementInfo Category="Icon" Region="19, 47, 31, 30" />
+                            <uc:CvElementInfo Category="Icon" Region="18, 237, 31, 31" />
+                            <uc:CvElementInfo Category="Icon" Region="18, 286, 31, 31" />
+                            <uc:CvElementInfo Category="Icon" Region="19, 190, 31, 30" />
+                            <uc:CvElementInfo Category="ArrowButton" Region="4, 17, 11, 12" />
+                            <uc:CvElementInfo Category="Icon" Region="19, 142, 32, 31" />
+                            <uc:CvElementInfo Category="Icon" Region="19, 94, 31, 30" />
+                            <uc:CvElementInfo Category="Cell" Region="0, 38, 280, 48" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="20, 13, 26, 18" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="18, 140, 32, 31" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="18, 15, 13, 15" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="206, 49, 12, 11" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="241, 62, 22, 15" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="17, 188, 34, 29" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="0, 85, 274, 455" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="16, 44, 34, 34" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="19, 234, 32, 33" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="40, 168, 187, 469" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="1, 152, 269, 101" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="5, 12, 10, 20" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="1, 114, 271, 204" />
+                            <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="1, 522, 264, 313" />
+                            <uc:CvElementInfo Category="ArrowButton" Confidence="Runtime" Region="18, 16, 12, 13" />
+                            <uc:CvElementInfo Category="ArrowButton" Confidence="Runtime" Region="10, 2, 28, 35" />
+                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="7, 2, 23, 36" />
+                            <uc:CvElementInfo Category="RadioButton" Confidence="Runtime" Region="19, 193, 30, 27" />
+                            <uc:CvElementInfo Category="RadioButton" Confidence="Runtime" Region="19, 240, 29, 28" />
+                            <uc:CvElementInfo Category="RadioButton" Confidence="Runtime" Region="19, 290, 30, 28" />
+                          </scg:List>
+                        </uc:CVCache.CvUiElements>
+                        <uc:CVCache.OcrTexts>
+                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="64">
+                            <uc:OcrTextInfo Region="6, 21, 6, 4" Text="-" />
+                            <uc:OcrTextInfo Region="20, 17, 23, 12" Text="iie" />
+                            <uc:OcrTextInfo Region="55, 97, 38, 14" Text="Jiyeon" />
+                            <uc:OcrTextInfo Region="99, 97, 22, 11" Text="Kim" />
+                            <uc:OcrTextInfo Region="23, 99, 19, 26" Text="%" />
+                            <uc:OcrTextInfo Region="241, 99, 8, 9" Text="3." />
+                            <uc:OcrTextInfo Region="253, 99, 8, 9" Text="2." />
+                            <uc:OcrTextInfo Region="33, 113, 14, 12" Text="7®" />
+                            <uc:OcrTextInfo Region="57, 113, 51, 12" Text="4:5121—1" />
+                            <uc:OcrTextInfo Region="56, 146, 30, 10" Text="Raon" />
+                            <uc:OcrTextInfo Region="92, 146, 20, 10" Text="Lee" />
+                            <uc:OcrTextInfo Region="234, 147, 8, 9" Text="2." />
+                            <uc:OcrTextInfo Region="246, 147, 15, 9" Text="26." />
+                            <uc:OcrTextInfo Region="241, 195, 20, 9" Text="1.7." />
+                            <uc:OcrTextInfo Region="228, 243, 14, 9" Text="12." />
+                            <uc:OcrTextInfo Region="246, 243, 15, 9" Text="28." />
+                            <uc:OcrTextInfo Region="228, 291, 14, 9" Text="12." />
+                            <uc:OcrTextInfo Region="247, 291, 14, 9" Text="17." />
+                            <uc:OcrTextInfo Region="56, 290, 32, 10" Text="APAC" />
+                            <uc:OcrTextInfo Region="93, 295, 4, 1" Text="-" />
+                            <uc:OcrTextInfo Region="102, 290, 11, 10" Text="Al" />
+                            <uc:OcrTextInfo Region="119, 289, 22, 11" Text="and" />
+                            <uc:OcrTextInfo Region="147, 290, 68, 10" Text="Documen..." />
+                            <uc:OcrTextInfo Region="57, 305, 34, 12" Text="om" />
+                            <uc:OcrTextInfo Region="92, 309, 2, 6" Text=":" />
+                            <uc:OcrTextInfo Region="98, 305, 10, 12" Text="0||" />
+                            <uc:OcrTextInfo Region="114, 305, 61, 12" Text="24^44." />
+                            <uc:OcrTextInfo Region="179, 307, 5, 11" Text=":)" />
+                            <uc:OcrTextInfo Region="57, 193, 67, 11" Text="Framework" />
+                            <uc:OcrTextInfo Region="152, 192, 2, 13" Text="I" />
+                            <uc:OcrTextInfo Region="234, 51, 26, 9" Text="11:55" />
+                            <uc:OcrTextInfo Region="243, 67, 18, 9" Text="*2I¥" />
+                            <uc:OcrTextInfo Region="57, 240, 69, 13" Text="KB^-ei^-iy" />
+                            <uc:OcrTextInfo Region="132, 240, 24, 13" Text="45—" />
+                            <uc:OcrTextInfo Region="156, 240, 1, 13" Text="I" />
+                            <uc:OcrTextInfo Region="28, 154, 8, 5" Text="DI" />
+                            <uc:OcrTextInfo Region="37, 163, 10, 10" Text="®" />
+                            <uc:OcrTextInfo Region="57, 161, 40, 12" Text="i-h'gm" />
+                            <uc:OcrTextInfo Region="46, 56, 1, 4" Text="&gt;" />
+                            <uc:OcrTextInfo Region="56, 50, 29, 10" Text="6269" />
+                            <uc:OcrTextInfo Region="38, 64, 9, 12" Text="6" />
+                            <uc:OcrTextInfo Region="57, 65, 10, 12" Text="Q" />
+                            <uc:OcrTextInfo Region="68, 70, 2, 6" Text=":" />
+                            <uc:OcrTextInfo Region="74, 65, 34, 12" Text="S?||0|" />
+                          </scg:List>
+                        </uc:CVCache.OcrTexts>
+                      </uc:CVCache>
+                    </scg:List>
+                  </uc:CvCacheContainer.Caches>
+                </uc:CvCacheContainer>
+              </p:CVScope.DesignTimeCacheContainer>
+              <p:CVScope.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <uaa:AbbyyScreenOCR CustomRecognitionProfilePath="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" Text="{x:Null}" BundleType="Basic" ComputeSkewAngle="False" DisplayName="Abbyy Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AbbyyScreenOCR_1" Image="[Image]" PredefinedRecognitionProfile="TextExtraction_Accuracy" Profile="None" />
+                </ActivityFunc>
+              </p:CVScope.OCREngine>
+              <p:CVScope.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16aa5e2e-83c6-44a9-b608-b4d5d2f8a515" InformativeScreenshot="9f1577e836eb609583aa1433eeb5195e" Selector="&lt;ctrl name='채팅 | Microsoft Teams' role='document' /&gt;&lt;ctrl name='채팅 목록' role='grouping' /&gt;&lt;ctrl idx='5' role='DIV' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </p:CVScope.Target>
+              <p:CVScope.UseLocalServer>
+                <InArgument x:TypeArguments="x:Boolean" />
+              </p:CVScope.UseLocalServer>
+            </p:CVScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp FilePath="C:\Users\javao\AppData\Local\Microsoft\Teams\current\teams.exe" IconBase64="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" InformativeScreenshot="9bfccb2857719a07ff0cbb3e121492a3.png" Selector="&lt;wnd aaname='채팅 | Microsoft Teams, 기본 창' app='teams.exe' cls='Chrome_WidgetWin_1' title='채팅 | Microsoft Teams'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

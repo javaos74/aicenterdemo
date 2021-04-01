@@ -1,0 +1,124 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="911,1094" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="28">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="50">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.AbbyyEmbedded.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="476,889" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 카카오톡" sap:VirtualizedContainerService.HintSize="434,797" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="376,505" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="myMenu" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'EVA_ChildWindow'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4e6d8bec-342a-4733-b7e5-09396a1bf1fc" InformativeScreenshot="4461075ffe3eb4b11fac8a9de4b962d5" Selector="&lt;wnd cls='EVA_ChildWindow' title='OnlineMainView_0x00030608' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <uix:NGetText DisplayName="Get Text 'client'" sap:VirtualizedContainerService.HintSize="334,167" sap2010:WorkflowViewState.IdRef="NGetText_1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 320, 807" FriendlyName="'client'" FullSelectorArgument="&lt;ctrl role='client' /&gt;" FuzzySelectorArgument="&lt;ctrl role='client' automationid='' /&gt;" ImageBase64="" InformativeScreenshot="a819b875cfc4512059626aa3700973f7.png" ScopeSelectorArgument="&lt;wnd app='kakaotalk.exe' cls='EVA_Menu' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[myMenu]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[myMenu]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp FilePath="C:\Program Files (x86)\Kakao\KakaoTalk\kakaotalk.exe" IconBase64="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" InformativeScreenshot="b290580e7e983d0fceb0d601fbb452e5.png" Selector="&lt;wnd app='kakaotalk.exe' cls='EVA_Window_Dblclk' title='카카오톡'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
